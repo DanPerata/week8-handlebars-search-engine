@@ -10,8 +10,8 @@ $(document).on('ready', function(){
 	$(document).on('click', ".btn-large",function(){
 		$.ajax('/search', {
 			data: {lang: $('.language').val()},
-			success: function(language){
-					$('#results').append(renderResultTemplate(language))
+			success: function(data){
+					$('#results').append(renderResultTemplate(data))
 			}
 		})
 		// console.log('submit')

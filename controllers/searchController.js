@@ -6,7 +6,7 @@ var searchController ={
 		console.log(langs)
 
 		var descrip = dummyData.programming[langs].desc
-		res.send({final: descrip})
+		res.send({desc: descrip})
 	}
 };
 
