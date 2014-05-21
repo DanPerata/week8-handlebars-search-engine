@@ -2,10 +2,11 @@ var dummyData = require('../models/search-data.js');
 
 var searchController ={
 	search: function (req, res){
-		var lang = req.query;
-		console.log(lang)
-		// var descrip = dummyData.lang.desc
-		// res.send(r)
+		var langs = req.query.lang;
+		console.log(langs)
+
+		var descrip = dummyData.programming[langs].desc
+		res.send({final: descrip})
 	}
 };
 

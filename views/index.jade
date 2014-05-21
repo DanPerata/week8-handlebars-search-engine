@@ -4,12 +4,12 @@ block content
 	h1 Hello Boulder!
 	form
 		| Select A Language: 
-		input(type='text', name='language')
+		input(type='text', name='language' class = "language")
 		button.btn-large(type = "button") Submit
 	div#results
 block	scripts
 	script#result( type="text/x-handlebars-template")
 		h2 Language: 
-		span.title {{desc}}
+		span.title {{final}}
 
 
